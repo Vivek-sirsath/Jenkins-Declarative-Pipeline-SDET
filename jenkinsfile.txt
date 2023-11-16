@@ -1,0 +1,33 @@
+pipeline{
+    agent any
+         stages{                
+                stage('Build')
+                {
+                    steps
+                    {
+                        echo "Building the Declarative Pipeline"
+                    }
+                   
+                }
+
+                stage('Test')
+                {
+                    steps
+                    {
+                        echo "Testing the Declarative Pipeline"
+                    }
+                   
+                }
+
+                stage('Deploy')
+                {
+                    steps
+                    {
+                        echo "Deploying the Declarative Pipeline"
+                    }
+                   
+                }
+
+         }
+
+}
